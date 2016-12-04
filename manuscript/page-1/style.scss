@@ -5,21 +5,39 @@ body {
   color: #2c3e50;
 }
 
+h1 {
+  color: white;
+  font-size: 9vw;
+}
+
+h2 {
+  font-size: 3vw;
+}
+
+h3 {
+  font-size: 4vw;
+}
+
+.pink {
+  color: rgba(255,220,230, 1);
+  font-size: 120%;
+}
+
 svg {
   display: block;
   width: 100%;
-  position: absolute;
+  /* position: absolute;
   top: 0;
   right: 0;
   left: 0;
-  bottom: 0;
-  height: 100vh;
-  max-width: 30em;
+  bottom: 0; */
+  height: 45vh;
+  max-width: 50vh;
   margin: 0 auto;
 }
 
 use, path:nth-child(2) {
-  animation: waves 60s linear infinite  
+  animation: waves 240s linear infinite;
 }
 
 @keyframes waves {
