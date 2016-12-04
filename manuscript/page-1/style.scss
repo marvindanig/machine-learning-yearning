@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1abc9c;
+  color: #2c3e50;
+}
+
+svg {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  max-width: 30em;
+  margin: 0 auto;
+}
+
+use, path:nth-child(2) {
+  animation: waves 60s linear infinite  
+}
+
+@keyframes waves {
+  0% {
+    stroke-dasharray: 120 20; 
+  }
+  
+  100% {
+    stroke-dasharray: 120 20;
+    stroke-dashoffset: 12000;
+  }
+}
+
+svg > g {
+  transform-origin: 50% 50%;
+  animation: pulse ease .2s infinite alternate;
+  
+  &:nth-child(2) { animation-delay:.1s }
+}
+
+@keyframes pulse {
+  0% { transform: scale(.995) }
+  100% { transform: scale(1); }
+}
+
+path:nth-child(2) { opacity: 1; }
+path { fill: pink; }
