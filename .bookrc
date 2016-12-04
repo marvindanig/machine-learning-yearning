@@ -1,7 +1,7 @@
 {
   "mode": {
-    "HTML": "html",
-    "CSS": "css",
+    "HTML": "haml",
+    "CSS": "scss",
     "JS": "js",
     "HEAD": "html"
   },
