@@ -1,12 +1,77 @@
-%header.tape.flex
-  .chapter.flex Chapter 1
-  .chaptername Introduction
+.leaf.flex
+  .inner
+    %h2 Contents
+    %ul
+      %li
+        %a.page{ href: "7" }
+          Introduction
+          %span 7
+      %li
+        %a.page{ href: "8" }
+          Setup
+          %span 8
+      %li
+        %a.page{ href: "9" }
+          Installation
+          %span 9
+      %li
+        %a.page{ href: "15" }
+          Registration
+          %span 15
+      %li
+        %a.page{ href: "17" }
+          Manuscript
+          %span 17
+      %li
+        %a.page{ href: "18" }
+          Commands
+          %span 18
+      %li
+        %a.page{ href: "20" }
+          Templates
+          %span 20
+      %li
+        %a.page{ href: "21" }
+          Afterthoughts
+          %span 21
+      %li
+        %a.page{ href: "22" }
+          Preprocessors
+          %span 22
+      %li
+        %a.page{ href: "23" }
+          Bubblin
+          %span 23
+      %li
+        %a.page{ href: "25" }
+          Credits
+          %span 25
+      %li
+        %a.page{ href: "26" }
+          Colophon
+          %span 26
 
-%main.leaf.flex
-  .inner.justify
-    %h1 New York
-    .subhead York, MA - Friday March 18, 2016 - Seven Leafs
-    .subhead
-      by
-      %span.uppercase Marvin Von Danig Goethe
-    %p When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream;
+
+Build your first system quickly, then iterate 25 ........................................................................
+Error analysis: Look at dev set examples to evaluate ideas 26 ................................................
+Evaluate multiple ideas in parallel during error analysis 28 ...................................................
+If you have a large dev set, split it into two subsets, only one of which you look at 30 ...........
+How big should the Eyeball and Blackbox dev sets be? 32 ......................................................
+Takeaways: Basic error analysis 34 ..........................................................................................
+Bias and Variance: The two big sources of error 36 .................................................................
+Examples of Bias and Variance 38 ............................................................................................
+Comparing to the optimal error rate 39 ...................................................................................
+Addressing Bias and Variance 41 ..............................................................................................
+Bias vs. Variance tradeoff 42 .....................................................................................................
+Techniques for reducing avoidable bias 43 ..............................................................................
+Techniques for reducing Variance 44 .......................................................................................
+Error analysis on the training set 46 ........................................................................................
+Diagnosing bias and variance: Learning curves 48 .................................................................
+Plotting training error 50 ..........................................................................................................
+Interpreting learning curves: High bias 51 ...............................................................................
+Interpreting learning curves: Other cases 53 ..........................................................................
+Plotting learning curves 55 .......................................................................................................
+Why we compare to human-level performance 58 ..................................................................
+How to define human-level performance 60 ...........................................................................
+Surpassing human-level performance 61 ................................................................................
+Why train and test on different distributions 63
